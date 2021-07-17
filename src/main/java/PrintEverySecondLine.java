@@ -10,9 +10,9 @@ public class PrintEverySecondLine {
         FileUri fileUri = new FileUri();
 
         String fileContent = Files.readString(Paths.get(fileUri.getFileUri("data.txt")));
-        String[] lines = fileContent.split("\n");
-        for (int i = 0; i<=lines.length;  i = i + 2)
-            System.out.println(lines[i]);
+        String[] fileLines = fileContent.split("\n");
+        for (int i = 0; i <= fileLines.length - 1;  i = i + 2)
+            System.out.println(fileLines[i]);
 
     }
 

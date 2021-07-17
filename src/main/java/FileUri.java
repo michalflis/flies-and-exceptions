@@ -6,7 +6,7 @@ public class FileUri {
 
     public URI getFileUri (String resourceName) throws URISyntaxException {
 
-        URL fileUrl = PrintEverySecondLine.class.getResource(resourceName);
+        URL fileUrl = getClass().getResource(resourceName);
         return fileUrl.toURI();
     }
 

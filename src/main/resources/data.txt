@@ -1,5 +1,4 @@
-Kurs
-Java
+KursJava
 Lekcja 6
 Pliki
 Wyjątki

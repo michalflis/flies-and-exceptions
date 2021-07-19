@@ -14,21 +14,16 @@ public class Pesel {
         }
     }
 
-    private static class IllegalLengthException extends Exception {
+    private static class IllegalLengthException extends RuntimeException {
 
-        private int peselLenght;
         private IllegalLengthException (int peselLenght){
-            this.peselLenght = peselLenght;
             System.out.println("Wrong number of characters = " + peselLenght + ".\nPESEL number have always 11 digits.");
         }
-
     }
 
-    private static class WrongTypeOfDataException extends Exception {
+    private static class WrongTypeOfDataException extends RuntimeException {
 
-        private char illegalChar;
         public WrongTypeOfDataException(char illegalChar) {
-            this.illegalChar = illegalChar;
             System.out.println("Wrong character - " + illegalChar + ".\nPESEL number always contains only digits.");
         }
     }

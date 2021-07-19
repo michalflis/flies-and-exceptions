@@ -8,11 +8,10 @@ public class SquareRoot {
     }
 
     public static double calculateSquareRoot (int givenNumber){
+
         if (givenNumber < 0) throw new IllegalArgumentException();
-
-        double result = Math.sqrt(givenNumber);
-
-        return result;
+        return Math.sqrt(givenNumber);
 
     }
+
 }

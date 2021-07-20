@@ -2,7 +2,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-
 public class FileUri {
 
     public URI getFileUri (String resourceName) throws URISyntaxException {
@@ -11,4 +10,6 @@ public class FileUri {
         return fileUrl.toURI();
     }
 
+
 }
+

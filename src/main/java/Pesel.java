@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Pesel {
 
-    static public void main(String[] args) throws IllegalLengthException, WrongTypeOfDataException {
+    static public void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         String pesel = scanner.nextLine();
